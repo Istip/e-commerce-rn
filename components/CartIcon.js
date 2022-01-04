@@ -8,7 +8,7 @@ const CartIcon = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.text} onPress={() => navigation.navigate('Cart')}>
-        Cart {getItemsCount() === 0 ? '' : `(${getItemsCount()})`}
+        {getItemsCount() === 0 ? 'Empty Cart' : `Cart (${getItemsCount()})`}
       </Text>
     </View>
   );
